@@ -17,6 +17,7 @@ class Graph:
         return self
 
     def addEdge(self, node1, node2):
+        # Undirected
         if node1 in self.adjacentList and node2 in self.adjacentList:
             self.adjacentList[node1].append(node2)
             self.adjacentList[node2].append(node1)
