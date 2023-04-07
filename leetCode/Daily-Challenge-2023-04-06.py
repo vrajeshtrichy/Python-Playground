@@ -63,8 +63,10 @@ class Solution:
                     if closed_island:
                         islands += 1
                         print("islands count: ", islands)
-                    print("dfs completed")
 
+                        for r in grid:
+                            print(r)
+                    print("dfs completed")
         return islands
 
     def check_and_mark_island_using_dfs(self, grid, rows, columns, y, x, is_closed_island):
@@ -97,6 +99,9 @@ grid = [[1, 1, 1, 1, 1, 1, 1, 0],
         [1, 0, 1, 0, 1, 1, 1, 0],
         [1, 0, 0, 0, 0, 1, 0, 1],
         [1, 1, 1, 1, 1, 1, 1, 0]]
+
+
+# grid = [[0,0,0,0],[1,0,1,0],[0,1,1,0],[0,0,0,0]]
 
 # grid = [[0, 0, 1, 0, 0],
 #         [0, 1, 0, 1, 0],
